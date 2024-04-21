@@ -20,8 +20,14 @@ body {
         text-align: center;
         font-size: 3rem;
     }
-    
+
     h2 {
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 10wv;
+    }
+    
+    .madeBy {
         text-align: right;
         font-size: 1rem;
     }
@@ -30,6 +36,15 @@ body {
         p {
             font-size: 1rem;
         }
+    }
+
+    .startSession{
+        box-sizing: border-box;
+        background-color: var(--palette-light);
+        border-radius: 8px;
+        width: 75%;
+        margin-left: 12.5%;
+        margin-top: 25vw;
     }
 
     footer {
@@ -50,6 +65,11 @@ body {
             font-weight: bold;
             
     };
+
     
     }
+}
+
+.flexbox_container {
+    display: flex;
 }

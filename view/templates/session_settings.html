@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>New Session</title>
+</head>
+
+<body>
+    <h1>New Session</h1>
+    <h2>Choose face:</h2>
+    <div class="flexbox_container">
+        <button>FIA</button>
+        <button>IFAA</button>
+    </div>
+    <h2>Choose archers:</h2>
+    <input id="archers_in" type="range" min="1" max="4" list="markers" value="1">
+    <output id="archers"></output>
+    <datalist id="markers">
+        <option value="1" label="1">1</option>
+        <option value="2" label="2">2</option>
+        <option value="3" label="3">3</option>
+        <option value="4" label="4">4</option>
+    </datalist>
+    <h2>Choose targets:</h2>
+    <input type="number" name="targets" id="targets_input" min="1" max="30" value="24">
+</body>
+
+</html>

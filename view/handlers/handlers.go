@@ -13,22 +13,28 @@ func RootHandler(w http.ResponseWriter, r *http.Request) {
 
 }
 
-
 func PrivacyHandler(w http.ResponseWriter, r *http.Request) {
-	static := template.Must(template.ParseFiles("./templates/privacy.html"))
+	privacy := template.Must(template.ParseFiles("./templates/privacy.html"))
 
-	static.Execute(w, "")
+	privacy.Execute(w, "")
 
 }
 func ContactHandler(w http.ResponseWriter, r *http.Request) {
-	static := template.Must(template.ParseFiles("./templates/contact.html"))
+	contact := template.Must(template.ParseFiles("./templates/contact.html"))
 
-	static.Execute(w, "")
+	contact.Execute(w, "")
 
 }
 func AboutHandler(w http.ResponseWriter, r *http.Request) {
-	static := template.Must(template.ParseFiles("./templates/about.html"))
+	about := template.Must(template.ParseFiles("./templates/about.html"))
 
-	static.Execute(w, "")
+	about.Execute(w, "")
 
+}
+
+func NewSessionHandler(w http.ResponseWriter, r *http.Request) {
+
+	session_settings := template.Must(template.ParseFiles("./templates/session_settings.html"))
+
+	session_settings.Execute(w, "")
 }

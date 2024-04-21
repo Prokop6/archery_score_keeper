@@ -20,6 +20,8 @@ func main() {
 	r.Get("/privacy", handlers.PrivacyHandler)
 	r.Get("/contact", handlers.ContactHandler)
 
+	r.Get("/session/settings", handlers.NewSessionHandler)
+
 	log.Print("Server online!")
 	http.ListenAndServe(":8080", r)
 	log.Print("Server offline...")
